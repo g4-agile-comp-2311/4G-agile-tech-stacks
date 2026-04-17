@@ -13,7 +13,7 @@ function Items({ onItemClick }) {
       <p>What will you give Bunny?</p>
       <ul id="items">
         {Object.keys(itemEmotionMap).map((item) => (
-          <li key={item} onClick={() => onItemClick(itemEmotionMap[item])}>
+          <li key={item}  onClick={() => onItemClick(item, itemEmotionMap[item])}>
             {item}
           </li>
         ))}

@@ -113,7 +113,7 @@ code {
 #items{
   list-style: none;
   display:flex;
-  align-items: center;
+  justify-content: center;
 }
 
 #items li {
@@ -125,4 +125,12 @@ code {
 
 #items li:hover {
 background-color: rgb(205, 136, 147);
+}
+
+.button {
+  padding: 1rem;
+}
+
+#reputation{
+  margin: 1rem;
 }

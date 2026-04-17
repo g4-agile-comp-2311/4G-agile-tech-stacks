@@ -1,18 +1,48 @@
-# React + Vite
+# Stack Sandbox: React+Vite and Postgres
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Student
 
-Currently, two official plugins are available:
+Ava
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack tested
 
-## React Compiler
+React
+Vite
+Postgres
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Goal
 
-Note: This will impact Vite dev & build performances.
+A very small sandbox app to test how this stack works.
 
-## Expanding the ESLint configuration
+## What the app does
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- SPA (no reloads)
+- State (remeber what item the user clicked)
+- Store use clicks db
+
+## Setup instructions
+
+1. Clone the repository
+2. Checkout this branch:
+   git checkout [sandbox-ava-reactVite-Postgres]
+3. Install dependencies:
+   npm i
+4. Start the app:
+   npm run dev --> front end
+   node server.js --> backend
+
+## Notes about setup
+
+HTTP module is so terrible to use! Please use express or some other frame work so we don't have to interface with this directly. Check otu server.js file for insanity.
+
+## What I learned
+
+- Components are fun and simple to style
+- HTTP module is very unforgiving and difficult to use.
+- It's a strange combination to have fast react + vite and really old, frustrating http module. they do not work well together at all.
+- suitable for smaller projects with few routes.
+- Postgres is pretty much identical to mysql, very easy to pick up but not sure why we would switch to it instead of mySQL for the project.
+
+## Verdict
+
+I would not reccomend this stack because the HTTP module will cause a lot of issues.
