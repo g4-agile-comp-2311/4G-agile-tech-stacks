@@ -53,3 +53,7 @@ Setting up React and Express was simple, but connecting them required using CORS
 
 ## Verdict
 The REM stack is flexible and beginner-friendly. It is good for small to medium projects but requires manual setup compared to full frameworks.
+
+## References
+- Referenced from this tutorial video:
+  https://www.youtube.com/watch?v=syA6vUaZtOM&list=PLzF6FKB4VN3_8lYlLOsJI8hElGLRgUs7C&index=7
