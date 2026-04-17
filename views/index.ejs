@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bodyContent">
+        <h1>Here's a random quote:</h1>
+        <% if (quote) { %>
+            <h2><%= quote.quoteText %></h2>
+        <% } else { %>
+            <h2>Knowledge is power</h2>
+        <% } %>
+        <div class="formDiv">
+            <form action="/" method="GET">
+                <button>Get a new quote</button>
+            </form>
+            <form action="/add" method="POST" class="newJokeForm">
+                <input type="text" name="quoteText" placeholder="create your own quote" required />
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

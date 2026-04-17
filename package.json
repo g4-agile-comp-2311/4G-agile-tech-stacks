@@ -1,0 +1,30 @@
+{
+  "name": "4g-agile-tech-stacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g4-agile-comp-2311/4G-agile-tech-stacks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/g4-agile-comp-2311/4G-agile-tech-stacks/issues"
+  },
+  "homepage": "https://github.com/g4-agile-comp-2311/4G-agile-tech-stacks#readme",
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

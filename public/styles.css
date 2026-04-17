@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyContent {
+  text-align: center;
+}
+
+.formDiv {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
